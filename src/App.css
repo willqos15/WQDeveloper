@@ -1,0 +1,10 @@
+*{box-sizing: border-box;
+font-family: "Share Tech", sans-serif;}
+
+body {
+    background-color: black;
+}
+
+html {
+     scroll-behavior: smooth;
+}

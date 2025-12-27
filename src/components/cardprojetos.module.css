@@ -1,0 +1,226 @@
+.transicao {
+    margin-top: 100px;
+    height: 100px;
+    background: linear-gradient(to top,
+            rgb(0, 15, 0),
+            rgb(0, 5, 0),
+            rgb(0, 2, 0),
+            rgb(0, 0, 0));
+}
+
+.transicaofim {
+    margin-bottom: 100px;
+    height: 100px;
+    background: linear-gradient(to bottom,
+            rgb(0, 15, 0),
+            rgb(0, 5, 0),
+            rgb(0, 2, 0),
+            rgb(0, 0, 0));
+}
+
+.cardpro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 15, 0);
+}
+
+
+.cardpro h1 {
+    width: 90%;
+    text-align: center;
+    color: #5ccb3e;
+    text-shadow: 0px 0px 4px rgb(0, 255, 4);
+    font-size: 3rem;
+    transition: 0.4s;
+}
+
+
+
+.cardpro h1:hover {
+    transition: 1s;
+    color: rgb(58, 239, 38);
+    text-shadow: 0px 0px 8px rgb(0, 255, 4);
+    transform: scale(1.1) translateY(-5px);
+}
+
+.cardpro h2 {
+    text-align: center;
+    color: #5ccb3e;
+    text-shadow: 0px 0px 2px rgb(0, 255, 4);
+    font-size: 2.3rem;
+    transform: scaleX(1);
+    transition: 1s;
+    margin: 5px 0;
+}
+
+.cardpro h3 {
+       color: #a5ff97;
+    text-shadow: 0px 0px 3px rgb(0, 255, 4);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cardpro h2:hover {
+    text-shadow: 0px 0px 4px rgb(0, 255, 4);
+    transform: translateX(10px)
+}
+
+.infopro:hover h2{
+    color: #6ced49;
+
+}
+.cardpro p {
+    font-size: 1.5rem;
+    color: #5ccb3e;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.cardpro strong {
+ 
+    color: #a5ff97;
+    text-shadow: 0px 0px 3px rgb(0, 255, 4);
+}
+
+
+
+.infopro button {
+    width: fit-content;
+    margin: 20px auto;
+    color: #a5ff97;
+    background: rgb(0, 50, 0);
+    border: 2px solid rgb(0, 255, 60);
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    
+    font-family: "Share Tech", sans-serif;
+    transition: all 0.4s, background 1s;
+    padding: 3px 10px;
+}
+
+.infopro button:hover {
+    padding: 5px 20px;
+    
+    color: #67ff3c;
+    text-shadow: 0px 0px 2px rgb(0, 255, 4);
+    box-shadow: 0px 0px 10px #37ff00;
+    border: 2px solid rgb(0, 255, 60);
+    background: #002703;
+}
+
+
+.mainfoto {
+    margin: 0 auto 20px auto;
+    width: 500px;
+    height: 200px;
+    padding: 0px;
+    object-fit: cover;
+    object-position: top;
+    border: 4px solid rgb(7, 95, 27);
+    transition: 1s ease;
+}
+
+.infopro:hover .mainfoto{
+    height: 300px;
+    box-shadow: 0px 0px 10px #37ff00;
+    border: 4px solid rgb(0, 255, 60);
+
+}
+
+.arrow{
+    cursor: pointer;
+    color: #a5ff97;
+    font-size: 1.5rem;
+    text-shadow:  0px 0px 10px #37ff00;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+}
+
+.imgfull img{
+    max-width: 80%;
+    display: block;
+    margin: 20px auto;
+    
+}
+
+.infopro hr {margin: 0px 0px 20px 0px}
+.infopro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px
+}
+
+.linkobs {
+    display: flex;
+}
+
+.linkobs div {
+    width: 50%;
+}
+
+.infopro ul, .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.infopro ul li a, .infopro ul li a:visited{
+    color: #a5ff97;
+    background: rgb(0, 50, 0);
+    border: 2px solid rgb(0, 255, 60);
+    font-size: 1.5rem;
+    margin: 10px 0;
+    padding: 0px 10px;
+    
+    text-decoration: none;
+    transition: 0.4s;
+ 
+}
+
+.infopro ul li a:hover{
+    padding: 5px 20px;
+    
+    color: #67ff3c;
+    text-shadow: 0px 0px 2px rgb(0, 255, 4);
+    box-shadow: 0px 0px 10px #37ff00;
+    border: 2px solid rgb(0, 255, 60);
+    background: #002703;
+}
+
+.cardpro p {
+    text-align: left;
+}
+
+
+.cardpro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardpro section {
+    display: flex;
+    max-width: 70%;
+    background-color: rgb(0, 0, 0);
+    margin: 0px 0px 100px 0px;
+    transition: 0.4s;
+    border: 4px solid rgb(7, 95, 27);
+}
+
+
+
+
+.cardpro section:hover {
+
+        box-shadow: 0px 0px 10px #37ff00;
+    border: 2px solid rgb(0, 255, 60);
+}

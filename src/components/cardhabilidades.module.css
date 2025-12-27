@@ -1,0 +1,125 @@
+/* ANIMAÇÃO DO JS PURO
+.cardh.show {
+    opacity: 1;
+    transform: translateY(-100px);
+    transition: transform 0.6s ease, opacity 0.4s ease;
+} */
+
+
+.cardh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardh h1 {
+    width: 90%;
+    text-align: center;
+    color: #5ccb3e;
+    text-shadow: 0px 0px 4px rgb(0, 255, 4);
+    font-size: 3rem;
+    transition: 0.4s;
+}
+
+
+
+.cardh h1:hover {
+    transition: 1s;
+    color: rgb(58, 239, 38);
+    text-shadow: 0px 0px 8px rgb(0, 255, 4);
+    transform: scale(1.1) translateY(-5px);
+
+}
+
+.infoh h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.ico {
+
+    height: 80%;
+    padding: 0 20px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardh img {
+    height: 100%;
+    padding: 0px;
+    margin: 0;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    max-height: 100%;
+}
+
+.cardh section:hover img {
+    transition: 0.2s;
+    height: 80%;
+}
+
+.cardh section:hover h2 {
+    transition: 0.2s;
+    color: #5ccb3e;
+    text-shadow: 0px 0px 4px rgb(0, 255, 4);
+}
+
+
+
+.infoh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.infoh ul li,
+.infoh ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.cardh p {
+    text-align: center;
+}
+
+.cardh,
+.cardind {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardh section {
+    box-shadow: 0px 0px #5ccb3e;
+    border: 3px solid #5ccb3e;
+    color: rgb(200, 255, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 500px;
+    height: 200px;
+    background: linear-gradient(to top, rgb(1, 37, 1), rgb(0, 0, 0));
+    background-size: 100% 200%;
+    background-position: bottom;
+    margin: 10px;
+    transition: background-position 0.5s ease;
+}
+
+.cardh section:hover {
+    border: 5px solid #5ccb3e;
+
+    background-position: top;
+}
