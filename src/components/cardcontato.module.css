@@ -112,7 +112,7 @@
 
 @media (max-width: 600px) {
     .contato{
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .contato h2{
@@ -142,8 +142,10 @@
     font-size: 1.5rem;
 }
 
+.btn{ font-size: 1.2rem;}
 
 .contato ul li, .contato ul li a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    
 }
 }
