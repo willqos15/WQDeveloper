@@ -27,8 +27,8 @@ export default function Navbar()
         
         <ul className={menu? styles.on:styles.off}>
             <li> <a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#contatos">Contato</a></li>
         </ul>
         </div>
