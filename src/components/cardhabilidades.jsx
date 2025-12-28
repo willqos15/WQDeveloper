@@ -24,9 +24,9 @@ export default function CardHabilidades() {
 
 
     const Card = {
-        ini: {scaleY: 0.9, X: "-100vw", opacity: 0},
+        ini: {scaleY: 0.9, opacity: 0},
 
-        open: {scaleY: 1,X: 0, opacity: 1, transition: { duration: 0.8 } },
+        open: {scaleY: 1, opacity: 1, transition: { duration: 0.8 } },
 
       
     }
