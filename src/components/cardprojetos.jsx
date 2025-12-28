@@ -63,6 +63,26 @@ export default function CardProjetos() {
 
                     <p> <strong>Resumo:</strong> Foi um projeto autoral de um protótipo de jogo voltado a por em prática conhecimentos de <strong>React, HTML, CSS e Javascript</strong>.</p>
 
+                    
+                                <div className={styles.link}>
+                                    <h3><strong>Links:</strong></h3>
+                                    <ul>
+                                        <li>
+                                            <a href='https://github.com/willqos15/X-men-Jogo-React'
+                                            target="_blank">
+                                                {">"}Código no Github</a>
+                                        </li>
+                                        <li>
+
+                                            <a href='https://willqos15.github.io/X-menJogoBETA/'
+                                            target="_blank">
+                                                {">"}Site do Jogo</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
                     <button onClick={() => setOpenXmen(!openXmen)}>
                         {openXmen ? "Ver menos" : "Ver mais sobre"}
                     </button>
@@ -94,25 +114,7 @@ export default function CardProjetos() {
                                     <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766689405/Captura_de_tela_2025-12-25_160025_twhm6f.png"></img>
 
                                 </div>
-                                <hr />
-                                <div className={styles.link}>
-                                    <h3><strong>Links:</strong></h3>
-                                    <ul>
-                                        <li>
-                                            <a href='https://github.com/willqos15/X-men-Jogo-React'
-                                            target="_blank">
-                                                Código no Github</a>
-                                        </li>
-                                        <li>
-
-                                            <a href='https://willqos15.github.io/X-menJogoBETA/'
-                                            target="_blank">
-                                                Site do Jogo</a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
+                                
 
                                 <a className={styles.arrow} onClick={() => { Rolar(xmenRef) }}>
                                     <IoIosArrowUp />
@@ -148,6 +150,30 @@ export default function CardProjetos() {
                     <p> <strong>Resumo:</strong> Um projeto autoral de estudo voltado a por em prática a <strong>criação de Servidores, Banco de Dados e Consumo de API </strong>.
                         O site foi pensado para pequenas empresas ou escolas, onde apenas o administrador gerencia os itens perdidos que ficam abertos a visualização para o público geral.
                     </p>
+
+                                <div className={styles.link}>
+                                    <h3><strong>Links:</strong></h3>
+                                    <ul>
+                                        <li>
+                                            <a href='https://github.com/willqos15/API-AEPerdidos'
+                                            target="_blank">
+                                                {">"}Servidor Github</a>
+                                        </li>
+                                        <li>
+
+                                            <a href='https://github.com/willqos15/Achados-e-Perdidos'
+                                            target="_blank">
+                                                {">"}Frontend Github</a>
+                                        </li>
+
+                                        <li>
+                                            <a href='https://achados-e-perdidos-gray.vercel.app/'
+                                            target="_blank">
+                                                {">"}Site do Projeto</a> <span>Login: admin e Senha: admin</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
 
                     <button onClick={() => setOpenAep(!openAep)}>
                         {openAep ? "Ver menos" : "Ver mais sobre"}
@@ -187,30 +213,7 @@ export default function CardProjetos() {
                                     <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766695220/Captura_de_tela_2025-12-25_174003_wudqhw.png"></img>
 
                                 </div>
-                                <hr />
-                                <div className={styles.link}>
-                                    <h3><strong>Links:</strong></h3>
-                                    <ul>
-                                        <li>
-                                            <a href='https://github.com/willqos15/API-AEPerdidos'
-                                            target="_blank">
-                                                Servidor Github</a>
-                                        </li>
-                                        <li>
-
-                                            <a href='https://github.com/willqos15/Achados-e-Perdidos'
-                                            target="_blank">
-                                                Frontend Github</a>
-                                        </li>
-
-                                        <li>
-                                            <a href='https://achados-e-perdidos-gray.vercel.app/'
-                                            target="_blank">
-                                                Site do Projeto versão Teste</a>
-                                        </li>
-                                    </ul>
-
-                                </div>
+                                
 
                                 <a className={styles.arrow} onClick={() => { Rolar(aepRef) }}>
                                     <IoIosArrowUp />

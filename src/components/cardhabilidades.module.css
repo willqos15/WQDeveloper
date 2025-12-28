@@ -32,7 +32,8 @@
 }
 
 .infoh h2 {
-    font-size: 1.8rem;
+    transition: 0.5s;
+    font-size: 2.5rem;
     font-weight: bold;
     padding: 0;
     margin: 0;
@@ -85,11 +86,26 @@
 
 .infoh ul li,
 .infoh ul {
+    transition: 0.5s;
+    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
 }
+
+
+.cardh section:hover ul li, .cardh:hover ul{
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+
 
 .cardh p {
     text-align: center;

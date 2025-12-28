@@ -57,9 +57,13 @@
 .cardpro h3 {
        color: #a5ff97;
     text-shadow: 0px 0px 3px rgb(0, 255, 4);
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
 }
+
+.cardpro span {color: #a5ff97;
+    text-shadow: 0px 0px 1px rgb(0, 255, 4);
+font-size: 1rem;}
 
 .cardpro h2:hover {
     text-shadow: 0px 0px 4px rgb(0, 255, 4);
@@ -78,16 +82,20 @@
 }
 
 .cardpro strong {
- 
+    padding: 0;
+    margin: 0;
     color: #a5ff97;
     text-shadow: 0px 0px 3px rgb(0, 255, 4);
 }
 
-
+.link h3 {
+    padding: 0;
+    margin: 0;
+}
 
 .infopro button {
     width: fit-content;
-    margin: 20px auto;
+    margin: 20px auto 20px auto;
     color: #a5ff97;
     background: rgb(0, 50, 0);
     border: 2px solid rgb(0, 255, 60);
@@ -166,24 +174,22 @@
 .infopro ul, .link {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: left;
+    gap: 0px;
     margin: 0;
     padding: 0;
     list-style: none;
     
 }
 .infopro ul li a, .infopro ul li a:visited{
-    color: #a5ff97;
-    background: rgb(0, 50, 0);
-    border: 2px solid rgb(0, 255, 60);
+     color: #67ff3c;
+     text-decoration: underline;
     font-size: 1.5rem;
     margin: 10px 0;
     padding: 0px 10px;
-    
-    text-decoration: none;
     transition: 0.4s;
- 
+
 }
 
 .infopro ul li a:hover{
@@ -191,9 +197,7 @@
     
     color: #67ff3c;
     text-shadow: 0px 0px 2px rgb(0, 255, 4);
-    box-shadow: 0px 0px 10px #37ff00;
-    border: 2px solid rgb(0, 255, 60);
-    background: #002703;
+    
 }
 
 .cardpro p {
@@ -249,12 +253,12 @@
 .link, .link ul {
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
-.link h3 {margin: 0;}
 
 .link {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 }
 

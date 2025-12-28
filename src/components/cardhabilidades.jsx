@@ -24,9 +24,9 @@ export default function CardHabilidades() {
 
 
     const Card = {
-        ini: {scaleY: 0.9, translateX: -500, opacity: 0},
+        ini: {scaleY: 0.9, X: "-100vw", opacity: 0},
 
-        open: {scaleY: 1,translateX: 0, opacity: 1, transition: { duration: 0.8 } },
+        open: {scaleY: 1,X: 0, opacity: 1, transition: { duration: 0.8 } },
 
       
     }
@@ -174,7 +174,7 @@ export default function CardHabilidades() {
                     </div>
 
                     <div className={styles.infoh}>
-                        <h2>Servidor com Node JS</h2>
+                        <h2>Node JS</h2>
                         <ul>
                             <li>- Noções básicas</li>
                             <li>- Biblioteca Express</li>
