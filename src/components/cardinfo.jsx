@@ -14,25 +14,26 @@ export default function CardInfo() {
         
         className={styles.rollimg}>
             
-            <div className={styles.backimg}>
-                <img src={imagem} />
+            <div  className={styles.backimg}>
+                <img src={imagem}  />
             </div>
 
             
-            <div className={styles.degrade}>
+            <div className={styles.degrade} >
 
                 
 
                 <motion.section
-                viewport={{ once: true }}
-                style={{originY: 0.5}}
+                
+                // viewport={{ once: true }}
+                style={{originY: 0}}
                 initial = {{scaleY: 0, opacity: 0}}
         whileInView={{scaleY:1, opacity:1}}
-        whileHover={{y:-30}}
-        transition={{duration: 0.1, ease: "easeIn"}}
+  
+        transition={{duration: 0.6, ease: "easeIn"}}
          className={styles.bloco}>
-                    <div>
-                    <h2 className={styles.hsobre}>Sobre mim: </h2>
+                    <div s>
+                    <h2  className={styles.hsobre}>Sobre mim: </h2>
                     <p>Sou ex-professor de robótica educacional e formado em Engenharia da Computação. Atualmente em transição de carreira para o desenvolvimento web.</p>
                      <p>Busco meu primeiro emprego em vagas remotas como <strong>dev. júnior, estagiário ou trainee.</strong> Estou aberto ao aprendizado, sejam em novas linguagens, tecnologias, frontend ou backend.</p>
                      </div>

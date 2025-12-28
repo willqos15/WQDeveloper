@@ -17,8 +17,8 @@ function App() {
     <Navbar/>
     <CardPerfil/>
     <CardInfo/>
-    <CardHabilidades/>
     <CardProjetos/>
+    <CardHabilidades/>
     <CardContato/>
     <a className="return" href="#nav"><IoIosArrowUp /></a>
     

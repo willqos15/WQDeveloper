@@ -1,5 +1,5 @@
 .transicao {
-    margin-top: 100px;
+    margin-top: 20px;
     height: 100px;
     background: linear-gradient(to top,
             rgb(0, 15, 0),
@@ -9,7 +9,7 @@
 }
 
 .transicaofim {
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     height: 100px;
     background: linear-gradient(to bottom,
             rgb(0, 15, 0),
