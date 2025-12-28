@@ -8,8 +8,8 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(to top, rgb(1, 37, 1), rgb(0, 0, 0));
-    width: fit-content;
-    margin: 0 auto 200px auto;
+    width: 600px;
+    margin: 0 auto 150px auto;
     transition: background-position 0.5s ease;
     transition: 0.4s;
 }
@@ -92,6 +92,7 @@
     font-family: "Share Tech", sans-serif;
     transition: all 0.4s, background 1s;
     padding: 3px 10px;
+    text-decoration: none;
 }
 
 .btn:hover {
@@ -106,4 +107,43 @@
 .icodown{
     margin: 0 5px;
 
+}
+
+
+@media (max-width: 600px) {
+    .contato{
+        max-width: 100%;
+    }
+
+    .contato h2{
+    font-size: 2rem;
+}
+
+
+.contato ul li, .contato ul li a {
+    font-size: 1.2rem;
+}
+
+.icoc{
+    margin: 0px;
+}
+
+
+}
+
+
+@media (max-width: 460px){
+    .icoc{
+
+    display: none;
+}
+
+    .contato h2{
+    font-size: 1.5rem;
+}
+
+
+.contato ul li, .contato ul li a {
+    font-size: 1.2rem;
+}
 }

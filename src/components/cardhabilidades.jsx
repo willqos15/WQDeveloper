@@ -24,9 +24,11 @@ export default function CardHabilidades() {
 
 
     const Card = {
-        ini: {scaleY: 0.6, translateX: -500, opacity: 0},
+        ini: {scaleY: 0.9, translateX: -500, opacity: 0},
 
-        open: {scaleY: 1,translateX: 0, opacity: 1, transition: { duration: 1 } }
+        open: {scaleY: 1,translateX: 0, opacity: 1, transition: { duration: 0.8 } },
+
+      
     }
 
 
@@ -34,10 +36,14 @@ export default function CardHabilidades() {
 
         <section id="habilidades"
             className={styles.cardh}>
-            <h1 > Habilidades: </h1>
+            
 
             <motion.div initial="ini" whileInView="open" 
-            variants={Card} className={styles.cardind}>
+            variants={Card}
+            viewport={{ once: true }}
+            className={styles.cardind}>
+
+                <h1 > Habilidades: </h1>
 
 
                 <motion.section variants={Card}>

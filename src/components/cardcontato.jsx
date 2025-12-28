@@ -40,10 +40,13 @@ export default function CardContato() {
                             </li>
                         </ul>
 
-        <button className={styles.btn}>
+       
+            <a className={styles.btn} href="../../public/Curriculo QueirozDev.pdf"
+            target="_blank">
                 Baixar Currículo
                 <FaFileDownload className={styles.icodown} />
-            </button>
+                   </a>
+         
                     </div>
 
                 </div>

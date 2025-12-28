@@ -42,6 +42,7 @@ export default function CardProjetos() {
     return (<motion.div id="projetos"
     
     style={{originX: 0.5}}
+    viewport={{ once: true }}
         initial = {{y:100, opacity: 0}}
         whileInView={{y:0, opacity:1}}
         transition={{duration: 0.5, ease: "easeIn"}}>

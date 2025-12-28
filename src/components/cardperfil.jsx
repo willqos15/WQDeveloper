@@ -25,12 +25,7 @@ export default function CardPerfil() {
 
         </section>
 
-        <div className={styles.rollimg}>
-            <div>
-              {/* <img src={imagem} /> */}
-                </div>
-            <div className={styles.degrade}></div>
-        </div>
+
 
     </>)
 }

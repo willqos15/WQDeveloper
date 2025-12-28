@@ -10,20 +10,10 @@
 .degrade {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0),rgba(0,0,0,0), rgb(0,0,0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0));
 
 }
-.rollimg {
-    position: relative;
-    justify-content: center;
-    max-height: 400px;
-    overflow: hidden;
-    object-fit: cover;
-}
-.rollimg img {
-    width: 100%;
-    
-}
+
 
 
 
@@ -42,7 +32,6 @@
 
     display: flex;
     overflow: hidden;
-    display: flex;
     height: 100%;
 
 
@@ -52,7 +41,6 @@
 .foto img {
     padding-left: 100px;
     padding-top: 0px;
-
     height: auto;
     transform: translateY(65px) translateX(-20px);
     transition: transform 1s ease, filter 1s ease;
@@ -62,7 +50,7 @@
 
 .foto img:hover {
     transform: translateY(0px) scale(1.1) rotate(5deg)perspective(900px) rotateX(10deg);
-     filter: drop-shadow(0 0 5px rgb(0, 255, 0));
+    filter: drop-shadow(0 0 5px rgb(0, 255, 0));
 }
 
 img:hover .blur {
@@ -72,19 +60,24 @@ img:hover .blur {
 
 
 .info {
+    right: 20px;
+    position: absolute;
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    padding: 0px 100px 20px 0px;
+    justify-content: center;
     color: #5ccb3e;
     text-shadow: 0px 0px 4px rgb(0, 255, 4);
 }
 
 
 .square {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
     padding: 10px;
+    margin-right: 200px;
     border: 3px solid #5ccb3e;
     transition: 0.5s;
     background-color: rgba(0, 20, 0, 0.6);
@@ -115,7 +108,7 @@ hr {
 
 .info h1 {
     transition: 0.5s;
-    font-size: 2rem;
+    font-size: 4rem;
 
 }
 
@@ -128,4 +121,120 @@ hr {
 .info h1,
 hr {
     margin: 0px
+}
+
+
+@media (max-width: 1100px) {
+
+    .square {
+        width: 400px;
+        margin-right: 200px;
+    }
+
+    .info h1 {
+        transition: 0.5s;
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .blur {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: right;
+        gap: 0px;
+        height: 500px;
+    }
+
+ .square {
+        
+    display: flex;
+    right: 0px;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.info{
+    position: relative;
+    right: 0;
+    width: 500px;
+    height: auto;
+    padding: 0px;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+   
+}
+    .foto img {
+        position:relative;
+      transform: none;
+        left:0;
+        padding-left: 10px;
+        padding-bottom: 0px;
+    width: 300px;
+}
+
+
+
+    .info {
+        position: relative;
+
+    }
+
+    .info h1 {
+        position: relative;
+        transition: 0.5s;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width:600px){
+
+.blur {
+    height: 440px;
+}
+
+   .info {
+    width: 90%;
+   }
+
+   .foto img {
+    padding-left: 20px;
+    width: 280px;
+   }
+
+    .info h1 {
+
+        transition: 0.5s;
+        font-size: 2rem;
+    }
+
+    .info p{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width:400px){
+
+    .info {
+    width: 280px;
+   }
+
+   .info p{
+        font-size: 1rem;
+    }
+
+
 }

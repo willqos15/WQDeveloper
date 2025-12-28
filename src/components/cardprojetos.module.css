@@ -224,3 +224,43 @@
         box-shadow: 0px 0px 10px #37ff00;
     border: 2px solid rgb(0, 255, 60);
 }
+
+
+@media (max-width: 800px) {
+
+    .mainfoto {
+    width: 90%;
+    height: auto;
+}
+
+.infopro:hover .mainfoto{
+    height: auto;
+}
+
+.cardpro h2 {
+    font-size: 2rem;
+}
+
+.cardpro p {
+    font-size: 1.3rem;
+}
+    
+
+.link, .link ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.link h3 {margin: 0;}
+
+.link {
+    padding-bottom: 20px;
+}
+}
+
+
+@media (max-width:650px){
+    .cardpro section  {
+        max-width: 100%;
+    }
+}

@@ -8,7 +8,7 @@ export default function CardInfo() {
 
     return (<>
 
-<h2 id= "sobre" className={styles.haltura}>Sobre mim: </h2>
+<h2 id= "sobre" className={styles.haltura}></h2>
 
         <div 
         
@@ -24,6 +24,7 @@ export default function CardInfo() {
                 
 
                 <motion.section
+                viewport={{ once: true }}
                 style={{originY: 0.5}}
                 initial = {{scaleY: 0, opacity: 0}}
         whileInView={{scaleY:1, opacity:1}}
