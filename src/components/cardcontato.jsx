@@ -41,7 +41,7 @@ export default function CardContato() {
                         </ul>
 
        
-            <a className={styles.btn} href="../../public/Curriculo QueirozDev.pdf"
+            <a className={styles.btn} href="/Curriculo-QueirozDev.pdf"
             target="_blank">
                 Baixar Currículo
                 <FaFileDownload className={styles.icodown} />
