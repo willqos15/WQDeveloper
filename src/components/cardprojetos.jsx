@@ -169,7 +169,7 @@ export default function CardProjetos() {
                                         <li>
                                             <a href='https://achados-e-perdidos-gray.vercel.app/'
                                             target="_blank">
-                                                {">"}Site do Projeto</a> <span>Login: admin e Senha: admin</span>
+                                                {">"}Site do Projeto</a> <span>Login e Senha: admin</span>
                                         </li>
                                     </ul>
 
