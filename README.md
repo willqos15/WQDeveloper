@@ -5,6 +5,10 @@ Este repositório contém o código do meu **portfólio pessoal**, desenvolvido 
 O objetivo do projeto não é servir como template reutilizável, mas como uma **peça autoral**, refletindo minha forma de pensar, criar e estruturar experiências web.
 
 ---
+### Link do Portfólio
+(https://queirozdeveloper.vercel.app/)
+
+---
 
 ## Ideia e Conceito
 
