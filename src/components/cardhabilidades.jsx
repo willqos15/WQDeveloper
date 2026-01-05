@@ -24,11 +24,11 @@ export default function CardHabilidades() {
 
 
     const Card = {
-        ini: {scaleY: 0.9, opacity: 0},
+        ini: { scaleY: 0.9, opacity: 0 },
 
-        open: {scaleY: 1, opacity: 1, transition: { duration: 0.8 } },
+        open: { scaleY: 1, opacity: 1, transition: { duration: 0.8 } },
 
-      
+
     }
 
 
@@ -36,17 +36,174 @@ export default function CardHabilidades() {
 
         <section id="habilidades"
             className={styles.cardh}>
-            
 
-            <motion.div initial="ini" whileInView="open" 
-            variants={Card}
-            viewport={{ once: true }}
-            className={styles.cardind}>
+
+            <motion.div initial="ini" whileInView="open"
+                variants={Card}
+                viewport={{ once: true }}
+                className={styles.cardind}>
 
                 <h1 > Habilidades: </h1>
 
 
+             
+
+
+            <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865829/React-icon.svg_knvqkx.png"></img>
+                    </div>
+
+                    <div className={styles.infoh}>
+                        <h2>React JS</h2>
+                        <ul>
+                            <li>- Criação de componentes</li>
+                            <li>- Renderização condicional</li>
+                            <li>- UseState, Context e Effect</li>
+                            <li>- React Hook Forms</li>
+                        </ul>
+                    </div>
+                </motion.section>
+
+
+
                 <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865829/javascript-logo-javascript-icon-transparent-free-png_1_nlvesd.png"></img>
+                    </div>
+
+                    <div className={styles.infoh}>
+                        <h2>Javascript</h2>
+                        <ul>
+                            <li>- Lógica de Programação</li>
+                            <li>- Manipulação de Variáveis</li>
+                            <li>- Condicionais e Repetição</li>
+                            <li>- Uso de funções</li>
+                        </ul>
+                    </div>
+                </motion.section>
+
+
+
+
+
+
+                  <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767580585/33518868-6e2595c4-d76a-11e7-8260-31b4e8110c93_qklqhx.png"></img>
+                    </div>
+
+                    <div className={styles.infoh}>
+                        <h2>TypeScript</h2>
+                        <ul>
+                            <li>- Noções básicsa</li>
+                            <li>- Tipagens</li>
+                            <li>- Interface</li>
+                            <li>- Funções</li>
+                        </ul>
+                    </div>
+                </motion.section>
+
+
+                  <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767580583/Tailwind_CSS_Logo.svg_cojbcb.png"></img>
+                    </div>
+
+                    <div className={styles.infoh}>
+                        <h2>TailWind</h2>
+                        <ul>
+                            <li>- Classes utilitárias</li>
+                            <li>- Layout</li>
+                            <li>- Componentes</li>
+                            <li>- Customização</li>
+                        </ul>
+                    </div>
+                </motion.section>
+
+
+
+    
+
+                <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865828/57233882-20344080-6fe5-11e9-9086-d20a955bed59_t1zjrv.png"></img>
+                    </div>
+
+                    <div className={styles.infoh}>
+                        <h2>Biblioteca AXIOS</h2>
+                        <ul>
+                            <li>- Consumo de APIs REST</li>
+                            <li>- GET, POST, PUT e DELETE</li>
+                            <li>- Tratamento com Try/Catch</li>
+                            <li>- Integração com React</li>
+
+                        </ul>
+                    </div>
+                </motion.section>
+
+
+                               <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865828/illustration_node_6bca4c07f8_tuj9of.png"></img>
+                    </div>
+
+                    <div className={styles.infoh}>
+                        <h2>Node JS</h2>
+                        <ul>
+                            <li>- Noções básicas</li>
+                            <li>- Biblioteca Express</li>
+                            <li>- Get, Post, Update e Delete </li>
+                            <li>- Cors, JWT, tokens e bcrypt </li>
+                        </ul>
+                    </div>
+                </motion.section>
+
+                
+
+
+                <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767276128/269-2693201_mysql-logo-circle-png_otjvcy.png"></img>
+                    </div>
+
+                    <div className={styles.infoh}>
+                        <h2>MySQL</h2>
+                        <ul>
+                            <li>- Noções básicas</li>
+                            <li>- Operações CRUDs </li>
+                            <li>- Integração com APIs </li>
+                            <li>- Biblioteca mysql2 </li>
+                        </ul>
+                    </div>
+                </motion.section>
+
+
+ 
+
+
+
+                
+                <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865830/logo-mongodb-png-mongodb-logo-png-400_1_bmhkar.png"></img>
+                    </div>
+
+                    <div className={styles.infoh}>
+                        <h2>MongoDB</h2>
+                        <ul>
+                            <li>- Noções básicas</li>
+                            <li>- Operações CRUDs </li>
+                            <li>- Integração com APIs </li>
+                            <li>- Biblioteca Mongoose</li>
+                        </ul>
+                    </div>
+
+                </motion.section>
+
+
+
+                   <motion.section variants={Card}>
                     <div className={styles.ico}>
                         <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865830/HTML5_logo_and_wordmark.svg_1_amqcbj.png"></img>
                     </div>
@@ -83,59 +240,6 @@ export default function CardHabilidades() {
 
                 <motion.section variants={Card}>
                     <div className={styles.ico}>
-                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865829/javascript-logo-javascript-icon-transparent-free-png_1_nlvesd.png"></img>
-                    </div>
-
-                    <div className={styles.infoh}>
-                        <h2>Javascript</h2>
-                        <ul>
-                            <li>- Lógica de Programação</li>
-                            <li>- Manipulação de Variáveis</li>
-                            <li>- Condicionais e Repetição</li>
-                            <li>- Uso de funções</li>
-                        </ul>
-                    </div>
-                </motion.section>
-
-                <motion.section variants={Card}>
-                    <div className={styles.ico}>
-                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865829/React-icon.svg_knvqkx.png"></img>
-                    </div>
-
-                    <div className={styles.infoh}>
-                        <h2>React JS</h2>
-                        <ul>
-                            <li>- Criação de componentes</li>
-                            <li>- Renderização condicional</li>
-                            <li>- UseState, Context e Effect</li>
-                            <li>- React Hook Forms</li>
-                        </ul>
-                    </div>
-                </motion.section>
-
-                <motion.section variants={Card}>
-                    <div className={styles.ico}>
-                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865828/57233882-20344080-6fe5-11e9-9086-d20a955bed59_t1zjrv.png"></img>
-                    </div>
-
-                    <div className={styles.infoh}>
-                        <h2>Biblioteca AXIOS</h2>
-                        <ul>
-                            <li>- Consumo de APIs REST</li>
-                            <li>- GET, POST, PUT e DELETE</li>
-                            <li>- Tratamento com Try/Catch</li>
-                            <li>- Integração com React</li>
-
-                        </ul>
-                    </div>
-                </motion.section>
-
-
-
-
-
-                <motion.section variants={Card}>
-                    <div className={styles.ico}>
                         <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865828/github-white-icon_hlaeva.webp"></img>
                     </div>
 
@@ -151,38 +255,28 @@ export default function CardHabilidades() {
                 </motion.section>
 
 
-                <motion.section variants={Card}>
+
+
+
+
+
+                                <motion.section variants={Card}>
                     <div className={styles.ico}>
-                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865830/logo-mongodb-png-mongodb-logo-png-400_1_bmhkar.png"></img>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767276125/Python.svg_xowlo9.png"></img>
                     </div>
 
                     <div className={styles.infoh}>
-                        <h2>MongoDB</h2>
+                        <h2>Python</h2>
                         <ul>
-                            <li>- Noções básicas</li>
-                            <li>- Operações CRUDs </li>
-                            <li>- Consulta de Dados </li>
-                            <li>- Biblioteca Mongoose</li>
+                            <li>- Lógica de Programação</li>
+                            <li>- Variaveis e Funções</li>
+                            <li>- Biblioteca PyAutoGUI </li>
+                            <li>- Biblioteca Tkinter </li>
                         </ul>
                     </div>
                 </motion.section>
 
 
-                <motion.section variants={Card}>
-                    <div className={styles.ico}>
-                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865828/illustration_node_6bca4c07f8_tuj9of.png"></img>
-                    </div>
-
-                    <div className={styles.infoh}>
-                        <h2>Node JS</h2>
-                        <ul>
-                            <li>- Noções básicas</li>
-                            <li>- Biblioteca Express</li>
-                            <li>- Get, Post, Update e Delete </li>
-                            <li>- Cors, JWT, tokens e bcrypt </li>
-                        </ul>
-                    </div>
-                </motion.section>
 
             </motion.div>
 
