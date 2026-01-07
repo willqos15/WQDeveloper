@@ -72,7 +72,7 @@ export default function CardProjetos() {
                 <div className={styles.infopro}>
                     <h2 ref={botRef}><strong>AvaBot - PetFeliz</strong></h2>
 
-                    <img className={styles.mainfoto} src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767576109/Captura_de_tela_2026-01-04_221743_xnumdq.png"></img>
+                    <img className={styles.mainfoto} src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767753617/Captura_de_tela_2026-01-06_222925_sszory.png"></img>
 
                     <p> <strong>Resumo:</strong> Projeto autoral desenvolvido para aplicar React, TypeScript, Tailwind, MySQL e Node.js na construção de um chatbot integrado a uma API de LLM.
                         A aplicação foi pensada para coletar feedbacks de pequenas empresas, direcionando clientes após o atendimento para registrar sua experiência de forma simples e conversacional.
@@ -144,11 +144,11 @@ export default function CardProjetos() {
 
                                 <h3>Imagens:</h3>
                                 <div className={styles.imgfull}>
-                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767576109/Captura_de_tela_2026-01-04_222012_gfupr4.png"></img>
+                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767753617/Captura_de_tela_2026-01-06_223034_zh6nar.png"></img>
 
-                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767576109/Captura_de_tela_2026-01-04_221903_vgbk19.png"></img>
+                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767753617/Captura_de_tela_2026-01-06_233818_zl6juu.png"></img>
 
-                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767576109/Captura_de_tela_2026-01-04_221917_ahoq6l.png"></img>
+                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767753617/Captura_de_tela_2026-01-06_233836_by8618.png"></img>
 
 
                                 </div>
