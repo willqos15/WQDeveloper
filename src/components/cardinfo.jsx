@@ -1,7 +1,7 @@
 import styles from './cardinfo.module.css'
 import imagem from '../img/deslizar.png'
 import { motion } from "motion/react"
-import foto from '../img/foto.jpg'
+import foto from '../img/foto.png'
 
 
 export default function CardInfo() {
