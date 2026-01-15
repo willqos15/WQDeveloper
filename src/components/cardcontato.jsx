@@ -42,7 +42,7 @@ export default function CardContato() {
 
                             <li>
                                 <a href="https://github.com/willqos15"
-                                    target="_blank">GitHUB</a>
+                                    target="_blank">GitHub</a>
                             </li>
                         </ul>
 

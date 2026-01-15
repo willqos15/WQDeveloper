@@ -27,8 +27,9 @@ export default function CardInfo() {
                 <div className={styles.cardsobre}>
 
                     <div className={styles.textoi}>
-                        <p>Sou engenheiro de computação e ex-professor de robótica educacional, com experiência em ensino de tecnologia e programação.</p>
-                        <p>Busco meu primeiro emprego remoto como <strong>dev. júnior, estagiário ou trainee</strong>, aplicando e expandindo conhecimentos em frontend, backend e novas tecnologias.</p>
+                        <p>Sou formado em Engenharia da Computação e atuei como professor de robótica, com experiência em tecnologia e programação.</p>
+                        <p>
+                         Desenvolvo projetos em frontend e backend, com foco em código claro, organização e aprendizado contínuo. Busco atuar em ambientes que valorizem trabalho em equipe, colaboração e comunicação objetiva.</p>
                     </div>
 
 

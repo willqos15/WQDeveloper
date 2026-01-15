@@ -8,9 +8,11 @@ export default function CardProjetos() {
     const [openXmen, setOpenXmen] = useState(false)
     const [openAep, setOpenAep] = useState(false)
     const [openBot, setOpenBot] = useState(false)
+    const [openEdu, setOpenEdu] = useState(false)
     const xmenRef = useRef(null)
     const aepRef = useRef(null)
     const botRef = useRef(null)
+    const eduRef = useRef(null)
 
     function Rolar(suaref) {
 
@@ -59,6 +61,97 @@ export default function CardProjetos() {
 
 
 
+            <section>
+                <div className={styles.infopro}>
+                    <h2 ref={botRef}><strong>EdTech - Palavras</strong></h2>
+
+                    <img className={styles.mainfoto} src="https://res.cloudinary.com/drklvmtqp/image/upload/v1768502489/Captura_de_tela_2026-01-15_153600_gs2kk2.png"></img>
+
+                    <p> <strong>Resumo:</strong> Aplicação web desenvolvida em <strong>React + Vite</strong>, <strong>TypeScript</strong> e <strong>Tailwind</strong> , O projeto foi pensado para uso em sala de aula, onde o professor administra todo o jogo, expondo a tela numa TV ou Datashow. O objetivo é criar uma maneira de abordar conteúdos pedagógicos de forma gamificada gerando engajamento na turma.
+
+
+                    </p>
+
+                    <div className={styles.link}>
+                        <h3><strong>Links:</strong></h3>
+                        <ul>
+                            <li>
+                                <a href='https://github.com/willqos15/EdTechPalavras'
+                                    target="_blank">
+                                    {">"}Github</a>
+                            </li>
+
+                            <li>
+                                <a href='https://edtechpalavras.vercel.app'
+                                    target="_blank">
+                                    {">"}Site do Projeto</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <button onClick={() => setOpenEdu(!openEdu)}>
+                        {openEdu ? "Ver menos" : "Ver mais sobre"}
+                    </button>
+
+                    <AnimatePresence>
+                        {openEdu &&
+                            <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <hr />
+
+                                <h3>Habilidades Desenvolvidas:</h3>
+
+                                
+                    
+
+
+                                <p>
+                                    <strong>Frontend:</strong>
+                                    O projeto fez uso intensivo de Hooks, com destaque para o useState no controle de placar, energia, turnos, regras e fluxo do jogo, garantindo consistência do estado, aliado a uma componentização prática com comunicação clara via props. O uso de TypeScript aumentou a segurança e legibilidade do código por meio de tipagem explícita de estados, props e estruturas de dados, enquanto o Tailwind CSS permitiu a construção de uma interface consistente, responsiva e adequada para exibição em TV ou Datashow.
+
+                                </p>
+
+
+
+                                <hr />
+                                <p>
+                                    <strong>Resultado:</strong> O projeto aplicou manipulação eficiente de arrays e estruturas de dados como base para a escalabilidade da aplicação, permitindo a adição de novas questões, dicas e conteúdos sem alterar a lógica principal, viabilizando personalização para diferentes escolas, adaptação de regras e funcionamento offline. Como resultado de aprendizado, esse processo fortaleceu a capacidade de análise de requisitos e entendimento das necessidades do cliente, orientando decisões técnicas e a evolução do sistema até se tornar uma aplicação funcional e validada na prática.
+
+                                </p>
+
+
+                                <hr />
+
+                                <h3>Imagens:</h3>
+                                <div className={styles.imgfull}>
+                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1768502490/Captura_de_tela_2026-01-15_153930_ju7dmb.png"/>
+
+                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1768502489/Captura_de_tela_2026-01-15_153747_hxchmf.png"/>
+
+                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1768502489/Captura_de_tela_2026-01-15_153804_bev9xl.png"/>
+                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1768502490/Captura_de_tela_2026-01-15_153828_wzhvql.png"/>
+                                    <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1768502490/Captura_de_tela_2026-01-15_153847_rmimdc.png"/>
+
+
+
+                                </div>
+
+
+                                <a className={styles.arrow} onClick={() => { Rolar(botRef) }}>
+                                    <IoIosArrowUp />
+                                </a>
+
+                            </motion.div>
+                        }
+                    </AnimatePresence>
+                </div>
+
+            </section>
 
 
 
