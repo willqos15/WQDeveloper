@@ -1,8 +1,49 @@
 .cardp {
-    margin: 0px 0px 20px 0px;
+     scroll-margin-top: 50px;
+    margin: 60px 0px 20px 0px;
     background-image: url("../img/tech1\ \(2\).gif");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
+    flex-direction: row;
+}
+
+.square ul, .downl {
+    display: inline;
+}
+
+
+
+.square ul li .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5ccb3e !important;
+    font-weight: bold !important;
+    font-size: 1.6rem;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    font-family: "Share Tech", sans-serif;
+    transition: all 0.4s, background 1s;
+    text-decoration: none;
+    padding: 5px 10px;
+    flex-wrap: nowrap;
+}
+
+.square ul li .btn:hover {
+    padding: 5px 10px;
+    background: none !important;
+    border-radius: 0;
+}
+
+.icodown {
+    margin: 0 5px;
 }
 
 
@@ -83,10 +124,43 @@ img:hover .blur {
     background-color: rgba(0, 20, 0, 0.6);
 }
 
+.square ul {
+    display: flex;
+    width: fit-content;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+  
+}
+
+
+
+
+.square ul li a,
+.square ul li a:visited, .downl, .downl:visited {
+    display: inline;
+    color: #5ccb3e;
+    font-size: 2rem;
+    margin: 0px 0px;
+    padding: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square ul li:hover a, .downl:hover {
+    color: rgb(0, 255, 4);
+}
+
 .square:hover {
     transition: 0.2s;
     background-color: rgba(0, 0, 0, 0.6);
-    border: 5px solid #5ccb3e;
+    border: 2px solid #5ccb3e;
     box-shadow: 0px 0px 8px rgb(0, 255, 4);
 }
 
@@ -108,13 +182,13 @@ hr {
 
 .info h1 {
     transition: 0.5s;
-    font-size: 4rem;
+    font-size: 3rem;
 
 }
 
 
 .info p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .info p,
@@ -149,40 +223,42 @@ hr {
         height: 500px;
     }
 
- .square {
-        
-    display: flex;
-    right: 0px;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-    margin-bottom: 20px;
-}
+    .square {
 
-.info{
-    position: relative;
-    right: 0;
-    width: 500px;
-    height: auto;
-    padding: 0px;
-}
+        display: flex;
+        right: 0px;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
 
-.foto {
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    height: auto;
-   
-}
+    .info {
+        position: relative;
+        right: 0;
+        width: 500px;
+        height: auto;
+        padding: 0px;
+    }
+
+    .foto {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: auto;
+
+    }
+
     .foto img {
-        position:relative;
-      transform: none;
-        left:0;
+        position: relative;
+        transform: none;
+        left: 0;
         padding-left: 10px;
         padding-bottom: 0px;
-    width: 300px;
-}
+        width: 200px;
+        height: auto;
+    }
 
 
 
@@ -199,40 +275,48 @@ hr {
 
 }
 
-@media (max-width:600px){
+@media (max-width:600px) {
 
-.blur {
-    height: 440px;
-}
 
-   .info {
-    width: 90%;
-   }
+    .blur {
+        height: 440px;
+    }
 
-   .foto img {
-    padding-left: 20px;
-    width: 280px;
-   }
+    .info {
+        width: 90%;
+    }
 
+  
     .info h1 {
 
         transition: 0.5s;
         font-size: 2rem;
     }
 
-    .info p{
+    .info p {
         font-size: 1.2rem;
     }
 }
 
 
-@media (max-width:400px){
+
+@media (max-width:450px) {
+
+      .foto img {
+        width: 180px;
+        height: auto;
+    }
+
+ .downl, .downl:visited{
+    font-size: 1.5rem;
+
+    }
 
     .info {
-    width: 280px;
-   }
+        width: 280px;
+    }
 
-   .info p{
+    .info p {
         font-size: 1rem;
     }
 

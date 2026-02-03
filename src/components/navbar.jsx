@@ -1,11 +1,10 @@
 import styles from './navbar.module.css'
-import { TbWorld } from "react-icons/tb";
 import { useState } from 'react';
 
 export default function Navbar() {
 
     const [menu, setMenu] = useState(false)
-    return (<>
+    return (<header>
         <nav className={styles.nav} id="nav">
             <div className={styles.titulo}>
 
@@ -24,12 +23,12 @@ export default function Navbar() {
                 <ul className={menu ? styles.on : styles.off}>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
-                    <li> <a href="#sobre">Sobre</a></li>
-                    <li><a href="#contatos">Contato</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#perfil">Contato</a></li>
                 </ul>
             </div>
         </nav>
         <hr className={styles.navline} />
 
-    </>)
+    </header>)
 }

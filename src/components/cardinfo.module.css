@@ -11,7 +11,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background: url("../img/deslizar.png");
     background-position: 0;
     background-size:cover;
@@ -34,7 +33,7 @@
     transition: 0.4ms;
     display: flex;
     justify-content: start;
-    align-items: left;
+    align-items: center;
     flex-direction: row;
     background: rgb(0,5,0);
     padding: 20px;
@@ -73,6 +72,8 @@
     padding-top: 0;
 }
 
+p strong {color:rgb(200, 255, 200);}
+
 .cardsobre:hover .textoi p {
     transform: translateY(-10px);
     text-shadow: 0px 0px 2px rgb(0, 255, 4);
@@ -105,7 +106,10 @@
 @media (max-width:750px){
 
     .bloco{
-        margin: 0;
+  
+     height: fit-content;
+     padding-top: 100px;
+     background: none;
     }
 
     .foto4x4{
@@ -119,7 +123,7 @@
     }
 
     .cardsobre {
-        justify-content: center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100vw;
