@@ -11,15 +11,7 @@ export default function CardInfo() {
 
 
 
-        <section
-
-            //          viewport={{ once: true }}
-            //         style={{originY: 0}}
-            //         initial = {{scaleY: 0, opacity: 0}}
-            // whileInView={{scaleY:1, opacity:1}}
-
-            // transition={{duration: 0.6, ease: "easeIn"}}
-            className={styles.bloco}  >
+        <section className={styles.bloco}  >
             <div id="sobre" className={styles.ancora}>
                 <div className={styles.barratop} >
                     <h2 className={styles.hsobre}>Sobre mim: </h2>
@@ -27,9 +19,12 @@ export default function CardInfo() {
                 <div className={styles.cardsobre}>
 
                     <div className={styles.textoi}>
-                        <p>Sou formado em Engenharia da Computação e atuei como professor de robótica, com experiência em tecnologia e programação.</p>
-                        <p>
-                         Desenvolvo projetos em frontend e backend, com foco em código claro, organização e aprendizado contínuo. Busco atuar em ambientes que valorizem trabalho em equipe, colaboração e comunicação objetiva.</p>
+
+                        <p>Com experiência em Desenvolvimento Web Front-end e formação em <strong> Engenharia da Computação</strong> atuei como professor de programação e <strong>desenvolvedor independente</strong> .</p>  <p>Acredito que o código deve ser escrito para máquinas executarem, mas para humanos entenderem.</p>
+
+                             <p>Busco atuar como Desenvolvedor <strong>Front-end Júnior</strong> , com perfil analítico e ético, focado em soluções escaláveis, responsivas e de fácil manutenção, sendo reconhecido por gestores anteriores pela boa <strong> comunicação</strong>, <strong> colaboração</strong> e <strong>confiabilidade.</strong> </p>
+
+
                     </div>
 
 

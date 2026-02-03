@@ -6,7 +6,8 @@
     margin: 0px;
     padding: 10px;
     z-index: 1;
-    position: relative;
+    position: fixed;
+    background-color: #000;
 
 }
 
@@ -51,14 +52,15 @@
     transition: 0.4s;
 }
 
+.nav ul li:hover a {color: #a5ff97;}
 .nav ul li:hover {
-    padding: 0px 5px;
+    padding: 5px 5px;
     transition: 0.2s;
-    color: rgb(58, 239, 38);
-    border: 3px solid #5ccb3e;
+    
+    border: 2px solid #5ccb3e;
     text-shadow: 0px 0px 8px rgb(0, 255, 4);
     box-shadow: 0px 0px 8px rgb(0, 255, 4);
-    background-color: rgb(24, 45, 30);
+    background-color: rgb(24, 65, 30);
 }
 
 .nav ul li a,

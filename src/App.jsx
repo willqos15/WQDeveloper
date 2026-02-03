@@ -6,7 +6,7 @@ import CardPerfil from './components/cardperfil'
 import CardHabilidades from './components/cardhabilidades'
 import CardProjetos from './components/cardprojetos'
 import CardInfo from './components/cardinfo'
-import CardContato from './components/cardcontato'
+import CardRecomendacao from './components/cardrecomendacao'
 import { IoIosArrowUp } from "react-icons/io";
 
 function App() {
@@ -19,8 +19,9 @@ function App() {
     <CardProjetos/>
     <CardHabilidades/>
     <CardInfo/>
-    <CardContato/>
-    <a className="return" href="#nav"><IoIosArrowUp /></a>
+    <CardRecomendacao/>
+  
+    <a className="return" href="#perfil"><IoIosArrowUp /></a>
     
     
      
