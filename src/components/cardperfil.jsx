@@ -57,7 +57,7 @@ export default function CardPerfil() {
                         </ul>
 
                       
-                                <a className={styles.downl} href="/William-Queiroz-Desenvolvedor-Web.pdf"
+                                <a className={styles.downl} href="/William-Desenvolvedor-Frontend.pdf"
                                     target="_blank">
                                     Currículo
                                     <FaFileDownload className={styles.icodown} />

@@ -20,9 +20,11 @@ export default function CardInfo() {
 
                     <div className={styles.textoi}>
 
-                        <p>Com experiência em Desenvolvimento Web Front-end e formação em <strong> Engenharia da Computação</strong> atuei como professor de programação e <strong>desenvolvedor independente</strong> .</p>  <p>Acredito que o código deve ser escrito para máquinas executarem, mas para humanos entenderem.</p>
+                        <p>Formação em <strong>Engenharia da Computação</strong> com experiência em <strong>Desenvolvimento Web Frontend</strong>, atuando como desenvolvedor autônomo, com vivência em educação tecnológica. Foco em <strong>código limpo, responsividade e boas práticas</strong>, com abertura para feedback e construção conjunta de soluções.</p>
+                        
+                        <p>Acredito que o código deve ser escrito para máquinas executarem, mas para humanos entenderem.</p>
 
-                             <p>Busco atuar como Desenvolvedor <strong>Front-end Júnior</strong> , com perfil analítico e ético, focado em soluções escaláveis, responsivas e de fácil manutenção, sendo reconhecido por gestores anteriores pela boa <strong> comunicação</strong>, <strong> colaboração</strong> e <strong>confiabilidade.</strong> </p>
+                              
 
 
                     </div>
