@@ -17,7 +17,7 @@ export default function CardRecomendacao() {
             <motion.section
                 className={styles.contato}>
 
-                    <h2>RECOMENDAÇÃO:</h2>
+                    <h2>CARTA DE RECOMENDAÇÃO:</h2>
 
             <p>
 

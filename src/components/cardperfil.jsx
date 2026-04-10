@@ -21,7 +21,7 @@ export default function CardPerfil() {
                     <div className={styles.square}>
                         <h1>Olá, bem vindo!</h1>
 
-                        <p>Sou William, Desenvolvedor Web Front-end, criando interfaces atrativas que conectam pessoas às soluções digitais</p>
+                        <p>Sou William, Desenvolvedor Web Front-end, criando interfaces atrativas que conectam pessoas às soluções digitais.</p>
 
                         <hr />
 
@@ -57,7 +57,7 @@ export default function CardPerfil() {
                         </ul>
 
                       
-                                <a className={styles.downl} href="/William-Queiroz-Desenvolvedor-Web.pdf"
+                                <a className={styles.downl} href="/William-Desenvolvedor-Frontend.pdf"
                                     target="_blank">
                                     Currículo
                                     <FaFileDownload className={styles.icodown} />
