@@ -12,6 +12,7 @@ export default function CardProjetos() {
     const n8nRef = useRef(null)
     const canoaRef = useRef(null)
     const apataRef = useRef(null)
+    const squadRef = useRef(null)
 
 
     return (<motion.div id="projetos"
@@ -83,6 +84,56 @@ export default function CardProjetos() {
                     <img src="https://res.cloudinary.com/drklvmtqp/image/upload/q_auto/f_auto/v1775830395/Captura_de_tela_2026-04-10_111007_ltkdx8.png"></img>
                 </>}
             />
+
+
+
+
+            <Projeto
+  ref={squadRef}
+  titulo="Squad Scheduling - Plataforma de Agendamento"
+  imagemain="https://res.cloudinary.com/drklvmtqp/image/upload/v1782243503/Captura_de_tela_2026-06-23_150933_zodur8.png"
+  resumo={
+    <>
+      Projeto full stack em equipe voltado à gestão de clínicas e consultórios, com foco em organização de agendamentos. Atuei no desenvolvimento Front-end definição de tarefas e alinhamento do fluxo do projeto durante as reuniões do time. .<br />
+
+      <br />
+      <strong>Tecnologias:</strong> Next.js, React, TypeScript, Tailwind CSS, Prisma, PostgreSQL, Supabase, Node.js, Zod, React Hook Form, TanStack Query, shadcn/ui, Radix UI, next-safe-action, Better Auth.
+    </>
+  }
+  ullinks={
+    <ul>
+      <li>
+        <a href="https://github.com/DevSquad-PA/squad-scheduling"
+           target="_blank">
+          {">"} GitHub
+        </a>
+      </li>
+    </ul>
+  }
+  habilidades={
+    <>
+      <p>
+        <strong>Frontend</strong>: Foquei na construção de uma interface responsiva e modular utilizando Next.js com App Router, aplicando React Server Components e integração com TanStack Query para otimização de estado e requisições.
+      </p>
+
+      <p>
+        <strong>Arquitetura e backend</strong>: O projeto utiliza Server Actions tipadas com validação via Zod e next-safe-action, além de autenticação baseada em sessão com Better Auth e persistência em PostgreSQL via Prisma ORM.
+      </p>
+
+      <p>
+        <strong>Decisões técnicas</strong>: A estrutura foi pensada para escalabilidade, separação de responsabilidades e isolamento de contexto por clínica, garantindo segurança e organização dos dados.
+      </p>
+    </>
+  }
+  resultado=" A plataforma centralizou a gestão de clínicas e agendamentos em um único sistema, melhorando a organização operacional, o controle de permissões e a visualização de consultas por perfil de usuário, com arquitetura preparada para escalar para múltiplas clínicas."
+  imagens={
+    <>
+      <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1782243503/Captura_de_tela_2026-06-23_150901_hmrbqy.png" />
+      <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1782243503/Captura_de_tela_2026-06-23_151237_wpp2tu.png" />
+      <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1782243503/Captura_de_tela_2026-06-23_150952_roo3qt.png" />
+    </>
+  }
+/>
 
             <Projeto ref={eduRef} titulo="EdTech - Dinâmicas para Educadores"
                 imagemain="https://res.cloudinary.com/drklvmtqp/image/upload/v1768502489/Captura_de_tela_2026-01-15_153600_gs2kk2.png"

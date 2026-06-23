@@ -20,7 +20,7 @@ export default function CardInfo() {
 
                     <div className={styles.textoi}>
 
-                        <p>Formação em <strong>Engenharia da Computação</strong> com experiência em <strong>Desenvolvimento Web Frontend</strong>, atuando como desenvolvedor autônomo, com vivência em educação tecnológica e atuação em projetos colaborativos e voluntários.</p>
+                        <p>Formação em <strong>Engenharia da Computação</strong> com experiência em <strong>Desenvolvimento Web FullStack</strong>, atuando como desenvolvedor autônomo, com vivência em educação tecnológica e atuação em projetos colaborativos e voluntários.</p>
                         
                         <p>Acredito que o código deve ser escrito para máquinas executarem, mas para humanos entenderem.</p>
 

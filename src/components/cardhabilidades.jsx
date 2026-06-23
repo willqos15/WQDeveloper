@@ -21,21 +21,29 @@ export default function CardHabilidades() {
 
                 
                 <div className={styles.grid}>
+               
+
+             
                 <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1782244925/marketplace-icon_ql3ge9.png"></img>
+                    </div>
+                    <h3>Next.js</h3>
+                </motion.section>
+
+                 <motion.section variants={Card}>
                     <div className={styles.ico}>
                         <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865829/React-icon.svg_knvqkx.png"></img>
                     </div>
-                    <h3>React JS</h3>
+                    <h3>React</h3>
                 </motion.section>
 
-
-                <motion.section variants={Card}>
+                 <motion.section variants={Card}>
                     <div className={styles.ico}>
-                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865829/javascript-logo-javascript-icon-transparent-free-png_1_nlvesd.png"></img>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865828/illustration_node_6bca4c07f8_tuj9of.png"></img>
                     </div>
-                    <h3>Javascript</h3>
+                    <h3>Node JS</h3>
                 </motion.section>
-
 
                 <motion.section variants={Card}>
                     <div className={styles.ico}>
@@ -47,13 +55,36 @@ export default function CardHabilidades() {
 
                 <motion.section variants={Card}>
                     <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865829/javascript-logo-javascript-icon-transparent-free-png_1_nlvesd.png"></img>
+                    </div>
+                    <h3>Javascript</h3>
+                </motion.section>
+
+                
+
+
+                
+
+
+                
+
+
+                <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1782244605/rest-api_sarpra.png"></img>
+                    </div>
+                    <h3>APIs Rest</h3>
+                </motion.section>
+
+                <motion.section variants={Card}>
+                    <div className={styles.ico}>
                         <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1767580583/Tailwind_CSS_Logo.svg_cojbcb.png"></img>
                     </div>
                     <h3>TailWind</h3>
                 </motion.section>
 
 
-                <motion.section variants={Card}>
+                {/* <motion.section variants={Card}>
                     <div className={styles.ico}>
                         <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865828/57233882-20344080-6fe5-11e9-9086-d20a955bed59_t1zjrv.png"></img>
                     </div>
@@ -72,9 +103,24 @@ export default function CardHabilidades() {
                         <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1769959624/react-hook-form_geoqoi.webp"></img>
                     </div>
                     <h3>R.H.Form</h3>
+                </motion.section> */}
+
+
+                 <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1782244605/jest-js-icon_bjwcku.webp"></img>
+                    </div>
+                    <h3>Jest</h3>
                 </motion.section>
 
+                <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1782244925/cypress-icon-pg9bdlubveoefqouilbg_lrvmjn.webp"></img>
+                    </div>
+                    <h3>Cypress</h3>
+                </motion.section>
 
+               
                 
 
 
@@ -94,12 +140,7 @@ export default function CardHabilidades() {
                 </motion.section>
 
 
-                <motion.section variants={Card}>
-                    <div className={styles.ico}>
-                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865828/illustration_node_6bca4c07f8_tuj9of.png"></img>
-                    </div>
-                    <h3>Node JS</h3>
-                </motion.section>
+               
 
                 <motion.section variants={Card}>
                     <div className={styles.ico}>
@@ -122,6 +163,13 @@ export default function CardHabilidades() {
                         <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1766865830/logo-mongodb-png-mongodb-logo-png-400_1_bmhkar.png"></img>
                     </div>
                     <h3>MongoDB</h3>
+                </motion.section>
+
+                 <motion.section variants={Card}>
+                    <div className={styles.ico}>
+                        <img src="https://res.cloudinary.com/drklvmtqp/image/upload/v1782244605/919853_yirbg2.png"></img>
+                    </div>
+                    <h3>Docker</h3>
                 </motion.section>
 
 
