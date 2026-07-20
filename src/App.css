@@ -1,9 +1,38 @@
 *{box-sizing: border-box;
-font-family: "Share Tech", sans-serif;}
+/* font-family: "Share Tech", sans-serif; */
+
+  font-family: "WDXL Lubrifont TC", sans-serif;
+
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #29345d;
+
+  --primary: #3b4ef6;
+  --secondary: #efeffc;
+
+  --card: #ffffff;
+
+  --border: #e5e7eb;
+}
+
+.dark {
+  --background: #09090b;
+  --foreground: #fafafa;
+
+  --primary: #3b82f6;
+  --secondary: #18181b;
+
+  --card: #18181b;
+
+  --border: #27272a;
+}
+
 
 body {
-    background-color: black;
-    overflow-x: hidden;
+    background-color: var(--background);
+    
     margin: 0;
     padding: 0;
 }
