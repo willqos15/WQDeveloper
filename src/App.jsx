@@ -24,7 +24,6 @@ function App() {
     <Certifications/>
     <AboutMe/>
     <Recommendation/>
- 
     </ThemeProvider>
     
      
