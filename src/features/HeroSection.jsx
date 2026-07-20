@@ -1,5 +1,3 @@
-
-import imagem from '../img/artwill2.png'
 import foto from "../assets/foto.png";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
