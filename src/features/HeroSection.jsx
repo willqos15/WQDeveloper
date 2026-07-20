@@ -5,8 +5,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaFileDownload } from "react-icons/fa";
 import Button from '../components/Button';
+import curriculo from '../assets/William_Queiroz_Dev_FullStack.pdf'
 
-export default function CardPerfil() {
+export default function HeroSection() {
 
     return (<>
         <section className='pt-12 flex sm:flex-row flex-col gap-10 justify-center items-center text-(--foreground) mx-10' id="inicio">
@@ -25,60 +26,54 @@ export default function CardPerfil() {
 
 
 
-                <div className='flex sm:flex-row flex-col gap-4'>
+                <div className='flex sm:flex-row flex-col gap-4 items-center mt-4'>
 
-                <ul className='flex items-center pt-4 text-2xl gap-4'>
+                    <ul className='flex items-center text-2xl gap-4'>
 
-                    <li>
-                        <a href="https://github.com/willqos15"
-                            target="_blank"> <FaGithub /> </a>
-                    </li>
+                        <li>
+                            <a href="https://github.com/willqos15"
+                                target="_blank"> <FaGithub /> </a>
+                        </li>
 
-                    <li>
-                        <a href="https://www.linkedin.com/in/william-queiroz-a36573120/" target="_blank">
-                            <FaLinkedin />
-                        </a>
-                    </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/william-queiroz-a36573120/" target="_blank">
+                                <FaLinkedin />
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="mailto:willqos15@gmail.com">
-                            <MdOutlineAlternateEmail />
-                        </a>
-                    </li>
+                        <li>
+                            <a href="mailto:willqos15@gmail.com">
+                                <MdOutlineAlternateEmail />
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="https://wa.me/5593991878598"
-                            target="_blank">
-                            <IoLogoWhatsapp />
-                        </a>
-                    </li>
+                        <li>
+                            <a href="https://wa.me/5593991878598"
+                                target="_blank">
+                                <IoLogoWhatsapp />
+                            </a>
+                        </li>
+                    </ul>
 
-                    
-                        
-                    
+                    <a href={curriculo}
+                        target="_blank">
+                        <Button className="flex gap-4 items-center pl-5" >
+                            Currículo
+                            <FaFileDownload />
+                        </Button>
+                    </a>
 
-
-                </ul>
-
-                <a href="/William-Queiroz-Desenvolvedor-FullStack.pdf"
-                            target="_blank">
-                            <Button className="flex gap-4 items-center pl-5" >
-                                Currículo
-                                <FaFileDownload />
-                            </Button>
-                        </a>
-
-                        </div>
+                </div>
 
             </div>
 
-            
-                <img
-                    className="md:h-96 md:w-96 h-40 w-40 p-2 bg-(--primary) rounded-full object-cover"
-                    src={foto}
-                    alt="Foto de perfil"
-                />
-            
+
+            <img
+                className="md:h-96 md:w-96 h-40 w-40 p-2 bg-(--primary) rounded-full object-cover"
+                src={foto}
+                alt="Foto de perfil"
+            />
+
 
 
 
