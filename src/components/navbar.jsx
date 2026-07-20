@@ -1,34 +1,148 @@
-import styles from './navbar.module.css'
-import { useState } from 'react';
+import { useState } from "react";
+import { IoSunny } from "react-icons/io5";
+import { IoIosMoon } from "react-icons/io";
+import { useTheme } from "../hooks/useTheme";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
-    const [menu, setMenu] = useState(false)
-    return (<header>
-        <nav className={styles.nav} id="nav">
-            <div className={styles.titulo}>
+  const links = [
+    { href: "#inicio", label: "Inicio" },
+    { href: "#projetos", label: "Projetos" },
+    { href: "#tecnologias", label: "Tecnologias" },
+    { href: "#sobre", label: "Sobre" },
+    
+  ];
 
-                <h1>
-                    Queiroz |   Developer </h1>
-            </div>
+  return (
+    <header className="sticky top-0 z-50">
+      <nav
+        aria-label="Navegação principal"
+        className="
+          flex flex-col
+          bg-(--background)
+          px-10 
+          py-4
+          text-2xl text-(--foreground)
+          
 
-            <div className={styles.divmenu}>
-                <button className={styles.menu}
-                    onClick={() => setMenu(!menu)}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+          sm:flex-row sm:items-center sm:justify-between
+        "
+      >
+        <div className="flex items-center justify-between">
+          <h1 className="font-medium">
+            WQdeveloper
+          </h1>
 
-                <ul className={menu ? styles.on : styles.off}>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#perfil">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-        <hr className={styles.navline} />
+          <button
+            type="button"
+            className="
+              flex h-10 w-10
+              flex-col items-center justify-center
+              gap-1
+              rounded-md
+              transition-colors
+              sm:hidden
+            "
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+            aria-label={
+              isMenuOpen
+                ? "Fechar menu"
+                : "Abrir menu"
+            }
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+          >
+            {isMenuOpen ? (
+              <span aria-hidden="true">
+                ✕
+              </span>
+            ) : (
+              <>
+                <span className="h-0.5 w-5 bg-(--foreground)" />
+                <span className="h-0.5 w-5 bg-(--foreground)" />
+                <span className="h-0.5 w-5 bg-(--foreground)" />
+              </>
+            )}
+          </button>
+        </div>
 
-    </header>)
+
+        {/* Menu Desktop */}
+        <ul className="hidden gap-6 sm:flex">
+          {links.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                className="
+                  transition-colors
+                  hover:text-(--primary)
+                "
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+
+       
+        <ul
+          id="mobile-menu"
+          className={`
+            flex flex-col gap-4
+            overflow-hidden
+            sm:hidden
+
+            transition-all
+            duration-300
+            ease-in-out
+
+            ${
+              isMenuOpen
+                ? "mt-5 max-h-96 opacity-100"
+                : "max-h-0 opacity-0"
+            }
+          `}
+          aria-hidden={!isMenuOpen}
+        >
+          {links.map((item) => (
+            <li key={item.href}>
+              <a
+                href={item.href}
+                className="
+                  block
+                  transition-colors
+                  hover:text-(--primary)
+                "
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+
+          <button 
+          onClick={toggleTheme}
+          className="cursor-pointer sm:hidden flex items-center gap-2">
+            Tema
+            {theme === "light" ? 
+            <> Noturno <IoIosMoon/> </> : 
+            <> Claro <IoSunny /></> }
+
+          </button>
+        </ul>
+
+          <button 
+          onClick={toggleTheme}
+          className="cursor-pointer hidden sm:flex">
+            {theme === "light" ? <IoIosMoon/> : <IoSunny /> }
+
+          </button>
+        
+
+      </nav>
+    </header>
+  );
 }
