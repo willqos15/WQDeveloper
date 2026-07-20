@@ -75,9 +75,9 @@ export const projects = [
   },
 
   {
-  id: "Saas de Agendamento",
+  id: "SaaS de Agendamento",
 
-  title: "Plataforma de Sistema de Agendamentos",
+  title: "SaaS Agendamentos",
 
   cover:
     "https://res.cloudinary.com/drklvmtqp/image/upload/v1782243503/Captura_de_tela_2026-06-23_150933_zodur8.png",
