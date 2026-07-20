@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaFileDownload } from "react-icons/fa";
-import Button from '../components/button';
+import Button from '../components/Button';
 
 export default function CardPerfil() {
 
