@@ -8,7 +8,7 @@ export const projects = [
       "https://res.cloudinary.com/drklvmtqp/image/upload/q_auto/f_auto/v1775830396/Captura_de_tela_2026-04-10_110906_ueprqh.png",
 
     summary:
-      "Liderei e atuei na análise de requisitos, desenvolvimento FullStack e deploy para uma associação de Proteção dos Animais. O projeto resolveu a baixa visibilidade da adoção e a dificuldade no gerenciamento dos animais.",
+      "Condução técnica e desenvolvimento Full Stack de uma plataforma responsiva para uma associação da causa animal, centralizando processos de adoção e formas de apoio. Mais de 25% dos animais cadastrados foram adotados.",
 
     technologies: {
   Frontend: [
@@ -75,7 +75,7 @@ export const projects = [
   },
 
   {
-  id: "squad-scheduling",
+  id: "Saas de Agendamento",
 
   title: "Plataforma de Sistema de Agendamentos",
 
@@ -83,7 +83,7 @@ export const projects = [
     "https://res.cloudinary.com/drklvmtqp/image/upload/v1782243503/Captura_de_tela_2026-06-23_150933_zodur8.png",
 
   summary:
-    "Projeto full stack em equipe voltado à gestão de clínicas e consultórios, com foco em organização de agendamentos. Atuei no desenvolvimento Front-end definição de tarefas e alinhamento do fluxo do projeto durante as reuniões do time.",
+    "Desenvolvimento de plataforma para gerenciamento de agendamentos e profissionais, atuando no Front-end com integração de APIs e na organização das entregas do projeto.",
 
   technologies: {
   Frontend: [
@@ -127,13 +127,13 @@ export const projects = [
 {
   id: "edtech",
 
-  title: "EdTech - Dinâmicas para Educadores",
+  title: "Aplicação para Dinâmicas em equipe",
 
   cover:
     "https://res.cloudinary.com/drklvmtqp/image/upload/v1768502489/Captura_de_tela_2026-01-15_153600_gs2kk2.png",
 
   summary:
-    "Atuei na análise de requisitos e desenvolvimento de uma aplicação para solucionar o baixo engajamento escolar, utilizando mecânicas de equipe e jogos, além de gerar relatórios para acompanhamento do professor.",
+    "O software aumenta o engajamento em atividades em grupo, utilizando mecânicas de equipe e jogos, além de gerar relatórios para acompanhamento da partida.",
 technologies: {
   Frontend: [
     "React",
@@ -159,7 +159,7 @@ technologies: {
   ],
 
   technical: [
-    "Frontend: A aplicação foi componentizada com React para garantir a personalização dos conteúdos sem quebrar a mecânica do jogo. O uso de TypeScript reduziu erros e aumentou a confiabilidade durante o desenvolvimento.",
+    "Frontend: A aplicação foi componentizada com React para garantir a personalização dos conteúdos sem quebrar a mecânica do jogo. O uso de TypeScript reduziu erros e aumentou a confiabilidade durante o desenvolvimento, aplicando componentização de interfaces, reutilização de componentes e configuração de build para produção.",
 
     "A uso de bibliotecas de Excel e Word foi adotada considerando a familiaridade dos professores com tais softwares, permitindo o uso como apoio avaliativo através de importação turmas e relatórios."
   ],
@@ -183,13 +183,13 @@ technologies: {
 {
   id: "avabot",
 
-  title: "AvaBot - PetFeliz",
+  title: "MVP de IA Conversacional",
 
   cover:
     "https://res.cloudinary.com/drklvmtqp/image/upload/v1767753617/Captura_de_tela_2026-01-06_222925_sszory.png",
 
   summary:
-    "Chatbot com IA desenvolvido para resolver a falta de coleta de feedbacks em pequenas empresas após atendimentos. A solução automatiza o registro e a organização das respostas, facilitando a análise do negócio.",
+    "Desenvolvimento Full Stack de aplicação integrada com Inteligência Artificial para coleta de feedback de clientes, com dashboard administrativo para análise dos atendimentos.",
 technologies: {
   Frontend: [
     "React",
