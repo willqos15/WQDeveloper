@@ -8,7 +8,7 @@ export default function Certifications() {
         Certificações
       </h2>
 
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-(--secondary) p-4 text-(--foreground)">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-(--secondary) p-4 text-(--foreground)">
 
         {certifications.map((certification) => (
           <article
@@ -22,7 +22,7 @@ export default function Certifications() {
 
             <div className="flex justify-between items-start">
 
-              <h3 className="font-semibold">
+              <h3 className="font-semibold text-(--primary)">
                 {certification.title}
               </h3>
 
@@ -40,7 +40,7 @@ export default function Certifications() {
             </div>
 
 
-            <p className="mt-3 text-sm ">
+            <p className="mt-3 text-sm font-bold ">
               {certification.institution}
             </p>
 

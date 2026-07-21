@@ -6,6 +6,13 @@ const certifications = [
     description: "Testes no React do zero ao avançado: Vitest e Cypress ",
     image: "https://res.cloudinary.com/drklvmtqp/image/upload/v1784572792/Testes_no_React_do_Zero_ao_ojyj33.jpg"
   },
+    {
+    title: "Metodologia ágeis",
+    institution: "Santander Open Academy",
+    date: "2026",
+    description: "Gestão de Projetos e Fundamentos de métodos Agile",
+    image: "https://res.cloudinary.com/drklvmtqp/image/upload/v1784639122/Captura_de_tela_2026-07-21_095040_hmbuk6.png"
+  },
   {
     title: "UX/UI",
     institution: "EBAC",
