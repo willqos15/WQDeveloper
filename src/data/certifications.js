@@ -6,6 +6,14 @@ const certifications = [
     description: "Testes no React do zero ao avançado: Vitest e Cypress ",
     image: "https://res.cloudinary.com/drklvmtqp/image/upload/v1784572792/Testes_no_React_do_Zero_ao_ojyj33.jpg"
   },
+
+   {
+    title: "GitHub Actions (CI)",
+    institution: "Udemy",
+    date: "2026",
+    description: "Integração contínua com GitHub Actions",
+    image: "https://res.cloudinary.com/drklvmtqp/image/upload/v1786363853/UC-f3d1a276-7563-4624-95ae-fc46baca35e1_xucw4o.jpg"
+  },
     {
     title: "Metodologia ágeis",
     institution: "Santander Open Academy",
@@ -13,13 +21,13 @@ const certifications = [
     description: "Gestão de Projetos e Fundamentos de métodos Agile",
     image: "https://res.cloudinary.com/drklvmtqp/image/upload/v1784639122/Captura_de_tela_2026-07-21_095040_hmbuk6.png"
   },
-  {
-    title: "UX/UI",
-    institution: "EBAC",
-    date: "2026",
-    description: "UX/UI na Prática: Como Tomar Decisões Reais",
-    image: "https://res.cloudinary.com/drklvmtqp/image/upload/v1784572727/1400xAUTO_zepftt.png"
-  },
+  // {
+  //   title: "UX/UI",
+  //   institution: "EBAC",
+  //   date: "2026",
+  //   description: "UX/UI na Prática: Como Tomar Decisões Reais",
+  //   image: "https://res.cloudinary.com/drklvmtqp/image/upload/v1784572727/1400xAUTO_zepftt.png"
+  // },
   {
     title: "IA",
     institution: "Full Cycle",
