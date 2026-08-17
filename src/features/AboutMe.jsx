@@ -111,6 +111,33 @@ export default function AboutMe() {
             ))}
           </motion.div>
         </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          className="space-y-1 bg-(--secondary) flex flex-col justify-center items-center p-8 text-xl text-(--foreground) gap-4 max-w-200 mx-auto"
+        >
+
+
+          <h3 className="text-2xl font-semibold">Vídeo de Apresentação: </h3>
+          <video
+            controls className="w-full rounded-lg"
+          >
+
+
+            <source
+              src="https://res.cloudinary.com/drklvmtqp/video/upload/v1786975578/V%C3%ADdeo_Apresenta%C3%A7%C3%A3o_William_Queiroz_q3xuif.mp4"
+              type="video/mp4" />
+
+          </video>
+
+
+        </motion.div>
+
+
+
+
       </motion.div>
     </section>
   );
