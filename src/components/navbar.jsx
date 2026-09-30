@@ -78,6 +78,7 @@ export default function Navbar() {
                 className="
                   transition-colors
                   hover:text-(--primary)
+                  duration-300
                 "
               >
                 {item.label}
@@ -115,6 +116,7 @@ export default function Navbar() {
                   block
                   transition-colors
                   hover:text-(--primary)
+                  duration-300
                 "
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -125,7 +127,7 @@ export default function Navbar() {
 
           <button 
           onClick={toggleTheme}
-          className="cursor-pointer sm:hidden flex items-center gap-2">
+          className="cursor-pointer sm:hidden flex items-center gap-2 hover:text-(--primary) transition-all duration-300">
             Tema
             {theme === "light" ? 
             <> Noturno <IoIosMoon/> </> : 
@@ -136,7 +138,7 @@ export default function Navbar() {
 
           <button 
           onClick={toggleTheme}
-          className="cursor-pointer hidden sm:flex">
+          className="cursor-pointer hidden sm:flex hover:text-(--primary) transition-all duration-300">
             {theme === "light" ? <IoIosMoon/> : <IoSunny /> }
 
           </button>
