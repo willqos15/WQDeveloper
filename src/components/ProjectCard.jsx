@@ -17,14 +17,14 @@ export default function ProjectCard({ project }) {
 
     return (
         <>
-            <section className="overflow-hidden rounded-2xl border border-white/10 bg-(--secondary) shadow-lg">
+            <section className="overflow-hidden rounded-2xl border border-white/10 bg-(--secondary) shadow-lg h-full">
 
 
                 {/* Imagem */}
                 <img
                     src={cover}
                     alt={title}
-                    className="w-full object-cover"
+                    className="w-full object-cover h-70"
                 />
 
                 <div className="space-y-6 p-8">
@@ -46,6 +46,8 @@ export default function ProjectCard({ project }) {
 
 
                     {/* Links */}
+
+                    {links?.length>0 && 
                     <div className="space-y-3">
                         <h3 className="font-semibold text-(--primary)">
                             Links
@@ -70,6 +72,7 @@ export default function ProjectCard({ project }) {
                             ))}
                         </div>
                     </div>
+                    }
 
                     {/* Botão */}
                     <Button onClick={() => setOpen(true)}>

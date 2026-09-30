@@ -2,25 +2,27 @@ export const projects = [
   {
     id: "apata",
 
-    title: "Plataforma de Adoção Animal",
+    title: "Apata",
 
     cover:
       "https://res.cloudinary.com/drklvmtqp/image/upload/q_auto/f_auto/v1775830396/Captura_de_tela_2026-04-10_110906_ueprqh.png",
 
     summary:
-      "Condução técnica e desenvolvimento Full Stack de uma plataforma responsiva para uma associação da causa animal, centralizando processos de adoção e formas de apoio. Mais de 25% dos animais cadastrados foram adotados.",
+      "Site de adoção animal para uma ONG. Atualmente, o projeto conta com uma rede de voluntários, cuja colaboração é conduzida por mim. Mais de 25% dos animais cadastrados foram adotados.",
 
     technologies: {
   Frontend: [
-    "React",
-    "JavaScript",
+    "Next.js",
+    "TypeScript",
     "Tailwind",
-    "React Hook Form"
+    "React Hook Form",
+    "Zod"
   ],
 
   Backend: [
-    "Node.js",
-    "Express",
+    "Next.js",
+    "API Routes",
+    "Prisma ORM"
   ],
 
   "Banco de Dados": [
@@ -38,13 +40,10 @@ export const projects = [
 },
 
     links: [
+
       {
-        label: "Backend Github",
-        url: "https://github.com/Canoa-Tech/Apata-Backend"
-      },
-      {
-        label: "Frontend Github",
-        url: "https://github.com/willqos15/Apata-Frontend"
+        label: "Github",
+        url: "https://github.com/willqos15/Apata"
       },
       {
         label: "Site do Projeto",
@@ -53,9 +52,9 @@ export const projects = [
     ],
 
     technical: [
-      "No frontend, priorizei uma experiência intuitiva, garantindo facilidade de uso para equipe voluntária do gerenciamento dos animais. Adotei React pela componentização e controle de estado. O TanStack Query foi utilizado para otimizar o consumo, performance e a sincronização de dados da API, reduzindo inconsistências.",
+      "No frontend, priorizei uma experiência intuitiva, garantindo facilidade de uso para equipe voluntária do gerenciamento dos animais. Adotei Next.js pela componentização e controle de estado. O TanStack Query foi utilizado para otimizar o consumo, performance e a sincronização de dados da API, reduzindo inconsistências.",
 
-      "O backend desenvolvido em colaboração com Fernando Macedo com Node.js e Prisma, a estrutura foi pensada para garantir escalabilidade e organização dos dados. A autenticação com JWT (Bearer Token) em um modelo stateless reduziu a complexidade de sessão e facilitou a integração com o frontend."
+      "O backend desenvolvido em colaboração no Next.js, a estrutura foi pensada para garantir escalabilidade e organização dos dados. A autenticação com JWT (Bearer Token) em um modelo stateless reduziu a complexidade de sessão e facilitou a integração com o frontend."
     ],
 
     result:
@@ -75,15 +74,15 @@ export const projects = [
   },
 
   {
-  id: "SaaS de Agendamento",
+  id: "SaaS de Agendamento de Serviços",
 
-  title: "SaaS Agendamentos",
+  title: "SaaS Scheduling",
 
   cover:
     "https://res.cloudinary.com/drklvmtqp/image/upload/v1782243503/Captura_de_tela_2026-06-23_150933_zodur8.png",
 
   summary:
-    "Desenvolvimento de plataforma para gerenciamento de agendamentos e profissionais, atuando no Front-end com integração de APIs e na organização das entregas do projeto.",
+    "Uma plataforma SaaS para gerenciamento de agendamentos de serviços, Desenvolvimento em equipe com versionamento e metodologias agéis.",
 
   technologies: {
   Frontend: [
@@ -127,13 +126,13 @@ export const projects = [
 {
   id: "edtech",
 
-  title: "Aplicação para Dinâmicas em equipe",
+  title: "EdTech Palavras",
 
   cover:
     "https://res.cloudinary.com/drklvmtqp/image/upload/v1768502489/Captura_de_tela_2026-01-15_153600_gs2kk2.png",
 
   summary:
-    "O software aumenta o engajamento em atividades em grupo, utilizando mecânicas de equipe e jogos, além de gerar relatórios para acompanhamento da partida.",
+    "Um jogo educacional para aumentar o engajamento em atividades em sala de aula. Já usado e validado por professores em sala de aula na rede pública e privada.",
 technologies: {
   Frontend: [
     "React",
@@ -181,15 +180,80 @@ technologies: {
 },
 
 {
+  id: "cypherzap",
+
+  title: "CypherZap",
+
+  cover:
+    "https://res.cloudinary.com/drklvmtqp/image/upload/v1790778479/Captura_de_tela_2026-09-30_112240_iiyemn.png",
+
+  summary:
+    "Aplicação desktop para automação de mensagens no WhatsApp, atualmente utilizada em ambiente profissional.",
+
+  technologies: {
+    Frontend: [
+      "React",
+      "TypeScript"
+    ],
+
+    Desktop: [
+      "Electron"
+    ],
+
+    Backend: [
+      "Node.js"
+    ],
+
+    Integrações: [
+      "Baileys"
+    ],
+
+    "Banco de Dados": [
+      "SQLite",
+      "better-sqlite3"
+    ]
+  },
+
+  // links: [
+  //   {
+  //     label: "Github",
+  //     url: "https://github.com/willqos15/CypherZap"
+  //   }
+  // ],
+
+  technical: [
+  "Licenciamento: Implementei uma validação de licença vinculada ao usuário para controlar o acesso à aplicação e impedir o uso por contas não autorizadas.",
+
+  "Envio de mensagens: Para tornar os disparos mais flexíveis, implementei suporte a diferentes modelos de mensagem, permitindo variar o conteúdo dos envios. Também criei presets de velocidade e uma estimativa de duração para dar mais previsibilidade ao processo.",
+
+  "Histórico e relatórios: Optei por registrar localmente os envios realizados para permitir consultas posteriores e exportação de relatórios, mantendo um histórico das operações realizadas na aplicação.",
+
+  "Gerenciamento de contatos: Implementei a extração de contatos de grupos para evitar o cadastro manual das listas de destinatários e facilitar a preparação dos envios.",
+
+  "Arquitetura desktop: Escolhi Electron para distribuir a aplicação como software desktop para Windows, utilizando React na interface e Node.js no processo principal. SQLite com better-sqlite3 foi utilizado para persistência local de dados e sessões, reduzindo a dependência de infraestrutura externa."
+],
+
+  result:
+    "A aplicação foi utilizada e validada em uma clínica de atendimento, onde passou a apoiar o processo de envio de mensagens para contatos. Atualmente está em uso, centralizando a preparação, execução e acompanhamento dos envios, além de manter o histórico e permitir a geração de relatórios.",
+
+  images: [
+    "https://res.cloudinary.com/drklvmtqp/image/upload/v1790778479/Captura_de_tela_2026-09-30_112353_eceoki.png",
+    "https://res.cloudinary.com/drklvmtqp/image/upload/v1790778479/Captura_de_tela_2026-09-30_112300_lmarvp.png",
+    "https://res.cloudinary.com/drklvmtqp/image/upload/v1790778479/Captura_de_tela_2026-09-30_112314_aagr3m.png",
+    "https://res.cloudinary.com/drklvmtqp/image/upload/v1790778479/Captura_de_tela_2026-09-30_112427_sx0l7u.png"
+  ]
+},
+
+{
   id: "avabot",
 
-  title: "MVP de IA Conversacional",
+  title: "Avabot PetFeliz",
 
   cover:
     "https://res.cloudinary.com/drklvmtqp/image/upload/v1767753617/Captura_de_tela_2026-01-06_222925_sszory.png",
 
   summary:
-    "Desenvolvimento Full Stack de aplicação integrada com Inteligência Artificial para coleta de feedback de clientes, com dashboard administrativo para análise dos atendimentos.",
+    "MVP de IA Conversacional integrada com Inteligência Artificial para coleta de feedback de clientes.",
 technologies: {
   Frontend: [
     "React",
@@ -250,7 +314,7 @@ technologies: {
     "https://res.cloudinary.com/drklvmtqp/image/upload/v1770052142/Captura_de_tela_2026-02-02_124218_sovakj.png",
 
   summary:
-    "Gerencia agendamentos de forma eficiente e acessível, eliminando processos manuais ao permitir que usuários realizem marcações por mensagem de texto ou áudio.",
+   "Automação de agendamentos integrada ao Telegram e Google Calendar, permitindo agendar horários por mensagens de texto ou áudio.",
 
   technologies: {
   Automação: [
